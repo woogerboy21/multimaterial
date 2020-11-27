@@ -56,7 +56,8 @@ M400 ; wait for move commands to complete
 G0 E-60 F5000 ; quickly retract it back out
 M400 ; wait for move commands to complete
 ; return printer to safe condition
-M104 S0 ; turn off temperature
+M104 S0 ; turn off hotend temperature
+M140 S0 ; turn off bed temperature
 M84 ; disable stepper motors
 M107 ; disable fans
 M117 Print Complete
